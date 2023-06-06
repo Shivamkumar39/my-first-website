@@ -6,6 +6,13 @@ body {
   header {
     background-color: #8e1b1b;
     color: #fff;
+    &:hover {
+      background-color: darken(#fafafa, 2%);    
+    transform: translateY(-5px);
+    transition: all 0.3s;
+    padding: 10px;
+    color: orange;
+    }
 
   }
   
@@ -13,6 +20,9 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
+    
+    
   }
   
   .logo {
@@ -20,6 +30,10 @@ body {
     font-weight: bold;
     font-style: italic;
     padding-left: 15px;
+    &:hover{
+      transform: translateY(-5px);
+      
+    }
     
   }
   
@@ -48,13 +62,20 @@ body {
     text-decoration: double;
     border: 50%;
     font-style: italic;
-    border-radius: 4px;
+    text-transform: uppercase;
+    transition: all .2s;
+    border-radius: 50px;
     cursor: col-resize;
     font-size: 20px;
   }
   
   .btn:hover {
+
     background-color: #1207d7;
+    &:hover{
+      transform: translateY(-5px);
+      color: orange;
+    }
   }
   
   .button:active {
@@ -69,6 +90,8 @@ body {
 .navbar {
     overflow: hidden;
     background-color: #333;
+    
+   
   }
   
   /* Navigation links */
@@ -79,6 +102,7 @@ body {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    
   }
   
   /* The subnavigation menu */
@@ -153,28 +177,6 @@ body {
   display: none;
 }
 
-/* Next & previous buttons 
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}*/
-
-/* Position the "next button" to the right 
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}*/
-
 /* On hover, add a black background color with a little bit see-through 
 .prev:hover, .next:hover {
   background-color: rgba(104, 8, 8, 0.8);
@@ -200,23 +202,12 @@ body {
   position: absolute;
   top: 0;
 }
-
-/* The dots/bullets/indicators
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #949191;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
 .active, .dot:hover {
   background-color: #ae0c0c;
 }
- */
+ 
+
+
 /* Fading animation */
 .fade {
   animation-name: fade;
@@ -227,6 +218,364 @@ body {
   from {opacity: .4}
   to {opacity: 1}
 }
+
+
+
+
+
+
+
+.btn-animated {
+  animation: moveInBottom 5s ease-out;
+  animation-fill-mode: backwards;
+}
+
+@keyframes moveInBottom {
+  0% {
+      opacity: 0;
+      transform: translateY(30px);
+  }
+
+  100% {
+      opacity: 1;
+      transform: translateY(0px);
+  }
+}
+
+/* Set height of body and the document to 100% to enable "full page tabs" */
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial;
+}
+
+/* Style tab links */
+.tablink {
+  background-color: #555;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 25%;
+}
+
+.tablink:hover {
+  background-color: #777;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 100px 20px;
+  height: 100%;
+}
+
+#Home {background-color: rgb(208, 59, 59);}
+#News {background-color: rgb(73, 143, 73);}
+#Contact {background-color: rgb(58, 58, 145);}
+#About {background-color: rgb(215, 150, 28);}
+
+/*#homeh1{
+  &:hover {   
+    transform: translateY(-5px);
+    transition: all 0.3s;
+    color: #110101;
+    
+  }
+}*/
+.containerjob {
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+
+.image3 {
+  max-width: 100%;
+  max-height:100%;
+}
+
+.text {
+  font-size: 20px;
+  padding-left: 20px;
+}
+/*#imgcontainerjob1{
+  width: 500px;
+  height: 500px;
+  margin-left: 20px;
+  margin-top: 30px;
+}*/
+.job1container {
+  display: flex;
+  align-items: center;
+  justify-content: center
+  
+}
+
+.image5 {
+  max-width: 50%;
+  max-height:50%;
+  border-radius: 15px;
+  margin-left: 40px;
+  margin-top: 10px;
+  
+}
+
+.text {
+  font-size: 20px;
+  padding-left: 20px;
+}
+
+/*free corcess element */
+.container1 {
+  position: relative;
+  width: 1160px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  transform-style: preserve-3d;
+  perspective: 500px;
+  margin: auto;
+}
+.container1 .box {
+  position: relative;
+  width: 275px;
+  height: 275px;
+  background: #000;
+  transition: 0.5s;
+  transform-style: preserve-3d;
+  overflow: hidden;
+  margin-right: 15px;
+  margin-top: 45px;
+}
+.container1:hover .box {
+  transform: rotateY(25deg);
+}
+.container1 .box:hover ~ .box {
+  transform: rotateY(-25deg);
+}
+.container1 .box:hover {
+  transform: rotateY(0deg) scale(1.25);
+  z-index: 1;
+  box-shadow: 0 25px 40px rgba(0,0,0,0.5);
+}
+.container1 .box .imgBx {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.container1 .box .imgBx:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg,#f00,#000);
+  z-index: 1;
+  opacity: 0;
+  transition: 0.5s;
+  mix-blend-mode: multiply;
+}
+.container1 .box:hover .imgBx:before {
+  opacity: 1;
+}
+.container1 .box .imgBx img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.container1 .box .content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  display: flex;
+  padding: 20px;
+  align-items: flex-end;
+  box-sizing: border-box;
+}
+.container1 .box .content h2 {
+  color: #fff;
+  transition: 0.5s;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+  font-size: 20px;
+  transform: translateY(200px);
+  transition-delay: 0.3s;
+}
+.container1 .box:hover .content h2 {
+  transform: translateY(0px);
+}
+.container1 .box .content p {
+  color: #fff;
+  transition: 0.5s;
+  font-size: 14px;
+  transform: translateY(200px);
+  transition-delay: 0.4s;
+}
+.container1 .box:hover .content p {
+  transform: translateY(0px);
+}
+@media screen and (max-width: 800px) {
+  .home{
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .container1{
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 1000px) {
+  .container1 {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+/*free corcess element---------end----- */
+
+
+/* freelacing page & first heading css is same */
+.Freelancing {
+  height:50px;
+  overflow:hidden;
+  margin-left: 1rem;
+}
+
+.Freelancing> div > div {
+  padding: 0.25rem 0.75rem;
+  height:2.81rem;
+  margin-bottom: 2.81rem;
+  display:inline-block;
+}
+
+.Freelancing div:first-child {
+  animation: text-animation 9s infinite;
+}
+
+.first div {
+  background-color:#20a7d8;
+}
+.second div {
+  background-color:#CD921E;
+}
+.Third div {
+  background-color:#cd1eb6;
+}
+@keyframes text-animation {
+  0% {margin-top: 0;}
+  10% {margin-top: 0;}
+  20% {margin-top: -5.62rem;}
+  30% {margin-top: -5.62rem;}
+  40% {margin-top: -11.24rem;}
+  60% {margin-top: -11.24rem;}
+  70% {margin-top: -5.62rem;}
+  80% {margin-top: -5.62rem;}
+  90% {margin-top: 0;}
+  100% {margin-top: 0;}
+}
+#Freelancingparagraph {
+  text-shadow: 0 0 7px rgba(255,255,255,.3), 0 0 3px rgba(255,255,255,.3);
+}
+
+#containerFreelancing{
+  color: #e5e5e5;
+  font-size: 2.26rem;
+  text-transform: uppercase;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* freelacing page & first heading css is same----end--- */
+
+/* css stylr for about me*/
+
+#imgabout{
+  height: 150px;
+  border-radius: 8px;
+  box-shadow: 2px 2px 10px 13px #cbd0cd;
+}
+.box-shadow {
+  font-family: cursive, sans-serif;
+  background-color: #2ecc71;
+  color: white;
+  padding: 50px;
+  border-radius: 8px;
+  margin-top: 20px;
+  box-shadow: 2px 2px 10px 13px #0a459e;
+}
+/*footer designe*/
+
+footer {
+  background-color: #9b7a39;
+  text-align: center;
+  padding: 10px;
+}
+
+
+
+body {
+  background-color: #F2F7FD;
+  transition: all 0.3s;
+  height: 100%;
+}
+.socialmediabtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.glass-btn {
+  width: 10px;
+  height: 10px;
+  padding: 10px;
+  background-color: #fafafa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 7px;
+  margin-left: 1em;
+  margin-right: 1em;  
+  cursor: pointer;
+  transition: all 0.3s;
+
+
+  &:hover {
+    background-color: darken(#fafafa, 2%);    
+    transform: translateY(-5px);
+    transition: all 0.3s;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
