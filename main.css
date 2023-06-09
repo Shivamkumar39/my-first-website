@@ -1,3 +1,6 @@
+html{
+     font-size: 62.5%;
+}
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -8,9 +11,9 @@ body {
     color: #fff;
     &:hover {
       background-color: darken(#fafafa, 2%);    
-    transform: translateY(-5px);
+    transform: translateY(-.5rem);
     transition: all 0.3s;
-    padding: 10px;
+    padding: 1rem;
     color: orange;
     }
 
@@ -26,12 +29,12 @@ body {
   }
   
   .logo {
-    font-size: 30px;
+    font-size: 3rem;
     font-weight: bold;
     font-style: italic;
-    padding-left: 15px;
+    padding-left: 1.5rem;
     &:hover{
-      transform: translateY(-5px);
+      transform: translateY(-.5rem);
       
     }
     
@@ -40,7 +43,7 @@ body {
   .nav-links {
     list-style: none;
     display: flexp;
-    padding: 10px;
+    padding: 1rem;
     
   }
   
@@ -56,7 +59,7 @@ body {
   /*button css */
   .btn {
     display: inline-block;
-    padding: 10px 20px;
+    padding: 1rem 2rem;
     background-color:#e60e0e;
     color: #fff;
     text-decoration: double;
@@ -64,16 +67,16 @@ body {
     font-style: italic;
     text-transform: uppercase;
     transition: all .2s;
-    border-radius: 50px;
+    border-radius: 5rem;
     cursor: col-resize;
-    font-size: 20px;
+    font-size: 2rem;
   }
   
   .btn:hover {
 
     background-color: #1207d7;
     &:hover{
-      transform: translateY(-5px);
+      transform: translateY(-.5rem);
       color: orange;
     }
   }
@@ -97,10 +100,10 @@ body {
   /* Navigation links */
   .navbar a {
     float: left;
-    font-size: 16px;
+    font-size: 1.6rem;
     color: white;
     text-align: center;
-    padding: 14px 16px;
+    padding: 1.4rem 1.6rem;
     text-decoration: none;
     
   }
@@ -113,11 +116,11 @@ body {
   
   /* Subnav button */
   .subnav .subnavbtn {
-    font-size: 16px;
+    font-size: 1.6rem;
     border: none;
     outline: none;
     color: white;
-    padding: 14px 16px;
+    padding: 1.4rem 16rem;
     background-color: inherit;
     font-family: inherit;
     margin: 0;
@@ -185,10 +188,10 @@ body {
 /* Caption text */
 .text {
   color: #130202;
-  font-size: 30px;
-  padding: 8px 12px;
+  font-size: 3rem;
+  padding: .8rem 1.2rem;
 
-  bottom: 8px;
+  bottom: .8rem;
   width: 100%;
   text-align: center;
 
@@ -197,8 +200,8 @@ body {
 /* Number text (1/3 etc) */
 .numbertext {
   color: #110101;
-  font-size: 30px;
-  padding: 8px 12px;
+  font-size: 3rem;
+  padding: .8rem 1.2rem;
   position: absolute;
   top: 0;
 }
@@ -244,7 +247,7 @@ body {
 
 /* Set height of body and the document to 100% to enable "full page tabs" */
 body, html {
-  height: 100%;
+  
   margin: 0;
   font-family: Arial;
 }
@@ -257,8 +260,8 @@ body, html {
   border: none;
   outline: none;
   cursor: pointer;
-  padding: 14px 16px;
-  font-size: 17px;
+  padding: 1.4rem 1.6rem;
+  font-size: 1.7rem;
   width: 25%;
 }
 
@@ -270,7 +273,7 @@ body, html {
 .tabcontent {
   color: white;
   display: none;
-  padding: 100px 20px;
+  padding: 10rem 2rem;
   height: 100%;
 }
 
@@ -299,8 +302,8 @@ body, html {
 }
 
 .text {
-  font-size: 20px;
-  padding-left: 20px;
+  font-size: 2rem;
+  padding-left: 2rem;
 }
 /*#imgcontainerjob1{
   width: 500px;
@@ -311,45 +314,46 @@ body, html {
 .job1container {
   display: flex;
   align-items: center;
-  justify-content: center
-  
 }
 
-.image5 {
-  max-width: 50%;
-  max-height:50%;
-  border-radius: 15px;
-  margin-left: 40px;
-  margin-top: 10px;
-  
+.imagess {
+  size: 25%;
+  border-radius: 1.5rem;
+  margin-left: 4rem;
+  margin-top: 1rem;
+  overflow: auto;
 }
 
 .text {
-  font-size: 20px;
-  padding-left: 20px;
+  font-size: 2rem;
+  padding-left: 2rem;
+  overflow: auto;
 }
-
+.home{
+  overflow: auto;
+}
 /*free corcess element */
 .container1 {
   position: relative;
-  width: 1160px;
+  width: 116rem;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   transform-style: preserve-3d;
-  perspective: 500px;
+  perspective: 50rem;
   margin: auto;
+  
 }
 .container1 .box {
   position: relative;
-  width: 275px;
-  height: 275px;
+  width: 27.5rem;
+  height: 27.5rem;
   background: #000;
   transition: 0.5s;
   transform-style: preserve-3d;
   overflow: hidden;
-  margin-right: 15px;
-  margin-top: 45px;
+  margin-right: 1.5rem;
+  margin-top: 4.5rem;
 }
 .container1:hover .box {
   transform: rotateY(25deg);
@@ -360,7 +364,7 @@ body, html {
 .container1 .box:hover {
   transform: rotateY(0deg) scale(1.25);
   z-index: 1;
-  box-shadow: 0 25px 40px rgba(0,0,0,0.5);
+  box-shadow: 0 2.5rem 4rem rgba(0,0,0,0.5);
 }
 .container1 .box .imgBx {
   position: absolute;
@@ -401,7 +405,7 @@ body, html {
   height: 100%;
   z-index: 1;
   display: flex;
-  padding: 20px;
+  padding: 2rem;
   align-items: flex-end;
   box-sizing: border-box;
 }
@@ -409,30 +413,25 @@ body, html {
   color: #fff;
   transition: 0.5s;
   text-transform: uppercase;
-  margin-bottom: 5px;
-  font-size: 20px;
-  transform: translateY(200px);
+  margin-bottom: .5rem;
+  font-size: 2rem;
+  transform: translateY(20rem);
   transition-delay: 0.3s;
 }
 .container1 .box:hover .content h2 {
-  transform: translateY(0px);
+  transform: translateY(0rem);
 }
 .container1 .box .content p {
   color: #fff;
   transition: 0.5s;
-  font-size: 14px;
-  transform: translateY(200px);
+  font-size: 1.4rem;
+  transform: translateY(20rem);
   transition-delay: 0.4s;
 }
 .container1 .box:hover .content p {
-  transform: translateY(0px);
+  transform: translateY(0rem);
 }
-@media screen and (max-width: 800px) {
-  .home{
-    flex: 100%;
-    max-width: 100%;
-  }
-}
+
 
 @media screen and (max-width: 800px) {
   .container1{
@@ -441,18 +440,22 @@ body, html {
   }
 }
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 600px) {
   .container1 {
     flex: 100%;
     max-width: 100%;
   }
+}
+#h2tag{
+  color: white;
+
 }
 /*free corcess element---------end----- */
 
 
 /* freelacing page & first heading css is same */
 .Freelancing {
-  height:50px;
+  height:5rem;
   overflow:hidden;
   margin-left: 1rem;
 }
@@ -515,17 +518,17 @@ body, html {
   font-family: cursive, sans-serif;
   background-color: #2ecc71;
   color: white;
-  padding: 50px;
-  border-radius: 8px;
-  margin-top: 20px;
-  box-shadow: 2px 2px 10px 13px #0a459e;
+  padding: 5rem;
+  border-radius: .8rem;
+  margin-top: 2rem;
+  box-shadow: .2rem .2rem 1rem 1.3rem #0a459e;
 }
 /*footer designe*/
 
 footer {
   background-color: #9b7a39;
   text-align: center;
-  padding: 10px;
+  padding: 1rem;
 }
 
 
@@ -543,14 +546,14 @@ body {
 }
 
 .glass-btn {
-  width: 10px;
-  height: 10px;
-  padding: 10px;
+  width: 1rem;
+  height: 1rem;
+  padding: 1rem;
   background-color: #fafafa;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 7px;
+  border-radius: .7rem;
   margin-left: 1em;
   margin-right: 1em;  
   cursor: pointer;
@@ -559,7 +562,7 @@ body {
 
   &:hover {
     background-color: darken(#fafafa, 2%);    
-    transform: translateY(-5px);
+    transform: translateY(-.5rem);
     transition: all 0.3s;
   }
 }
