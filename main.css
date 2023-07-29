@@ -120,10 +120,10 @@ body {
     border: none;
     outline: none;
     color: white;
-    padding: 1.4rem 16rem;
+    padding: 1.4rem 1.6rem;
     background-color: inherit;
     font-family: inherit;
-    margin: 0;
+   
   }
   
   /* Add a red background color to navigation links on hover */
@@ -301,10 +301,7 @@ body, html {
   max-height:100%;
 }
 
-.text {
-  font-size: 2rem;
-  padding-left: 2rem;
-}
+
 /*#imgcontainerjob1{
   width: 500px;
   height: 500px;
@@ -328,6 +325,11 @@ body, html {
   font-size: 2rem;
   padding-left: 2rem;
   overflow: auto;
+  &:hover{
+    transform: translateY(-.5rem);
+    color: rgb(255, 247, 0);
+  }
+
 }
 .home{
   overflow: auto;
